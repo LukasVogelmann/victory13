@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-02-28UTC12:57:320">
+        <header>
+            <authorName>Lukas</authorName>
+            <authorEmail>jayvogelmann@icloud.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="text">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="link">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="target">
+                <source>Target</source>
+            </trans-unit>
+            <trans-unit id="background_color">
+                <source>Background Color</source>
+            </trans-unit>
+            <trans-unit id="color">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="mage">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="media">
+                <source>Media</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

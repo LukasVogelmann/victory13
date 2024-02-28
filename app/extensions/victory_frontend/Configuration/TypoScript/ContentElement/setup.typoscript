@@ -1,0 +1,15 @@
+################
+#### HELPER ####
+################
+@import 'EXT:victory_frontend/Configuration/TypoScript/ContentElement/Helper/ContentElement.typoscript'
+
+
+#####################################
+#### CONTAINER ELEMENT RENDERING ####
+#####################################
+
+
+#############################################################
+#### CONTENT ELEMENT RENDERING                           ####
+#### Manual inclusion to keep control over loading order ####
+#############################################################

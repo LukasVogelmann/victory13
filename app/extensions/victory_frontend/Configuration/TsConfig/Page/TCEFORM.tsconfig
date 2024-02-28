@@ -1,0 +1,17 @@
+#
+# TCEFORM
+#
+TCEFORM {
+    tt_content {
+        header_layout {
+            altLabels {
+                # 0 = Default ( = h2)
+                1 = H1
+                2 = H2
+                3 = H3
+                4 = H4
+                5 = H5
+            }
+        }
+    }
+}

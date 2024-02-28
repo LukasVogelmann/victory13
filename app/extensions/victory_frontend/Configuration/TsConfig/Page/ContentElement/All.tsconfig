@@ -1,0 +1,6 @@
+##########################
+#### CONTENT ELEMENTS ####
+##########################
+@import 'EXT:victory_frontend/Configuration/TsConfig/Page/ContentElement/Element/*.tsconfig'
+
+

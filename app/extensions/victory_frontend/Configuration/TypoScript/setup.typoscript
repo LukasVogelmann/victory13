@@ -1,0 +1,141 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:victory_frontend/Configuration/TypoScript/ContentElement/setup.typoscript">
+
+################
+#### HELPER ####
+################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:victory_frontend/Configuration/TypoScript/Helper/DynamicContent.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+    typeNum = 0
+    #shortcutIcon = EXT:victory_frontend/Resources/Public/Icons/favicon.ico
+
+    10 = FLUIDTEMPLATE
+    10 {
+        templateName = TEXT
+        templateName {
+            cObject = TEXT
+            cObject {
+                data = pagelayout
+                required = 1
+                case = uppercamelcase
+                split {
+                    token = pagets__
+                    cObjNum = 1
+                    1.current = 1
+                }
+            }
+            ifEmpty = Default
+        }
+        templateRootPaths {
+            0  = EXT:fluid_styled_content/Resources/Private/Templates/
+            200 = EXT:victory_frontend/Resources/Private/Page/Templates/
+        }
+        partialRootPaths {
+            0  = EXT:fluid_styled_content/Resources/Private/Partials/
+            200 = EXT:victory_frontend/Resources/Private/Page/Partials/
+        }
+        layoutRootPaths {
+            0  = EXT:fluid_styled_content/Resources/Private/Layouts/
+            200 = EXT:victory_frontend/Resources/Private/Page/Layouts/
+        }
+
+
+        ##########################
+        ### DATA PREPROCESSING ###
+        ##########################
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = media
+            }
+            20 = menu
+            20 {
+                levels = 2
+                includeSpacer = 1
+                includeNotInMenu = 0
+                as = mainnavigation
+            }
+            40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+            40 {
+                languages = auto
+                as = languagenavigation
+            }
+            
+        }
+
+        #################
+        ### VARIABLES ###
+        #################
+        variables {
+            pageTitle = TEXT
+            pageTitle.data = page:title
+            siteTitle = TEXT
+            siteTitle.data = siteLanguage:websiteTitle//site:websiteTitle//site:identifier
+            rootPage = TEXT
+            rootPage.data = leveluid:0
+            pagelayout = TEXT
+            pagelayout {
+                data = pagelayout
+                replacement.10 {
+                    search = pagets__
+                    replace =
+                }
+                ifEmpty = default
+            }
+            contactPid = TEXT
+            contactPid.value = {$page.contactPid}
+        }
+    }
+
+    headerData {
+        10 = TEXT
+        10.value = <meta name="viewport" content="width=device-width, initial-scale=1">
+    }
+}
+
+
+################
+#### CONFIG ####
+################
+config {
+    absRefPrefix = auto
+    no_cache = {$config.no_cache}
+    uniqueLinkVars = 1
+    pageTitleFirst = 1
+    linkVars = L
+    prefixLocalAnchors = {$config.prefixLocalAnchors}
+    renderCharset = utf-8
+    metaCharset = utf-8
+    doctype = html5
+    removeDefaultJS = {$config.removeDefaultJS}
+    inlineStyle2TempFile = 1
+    admPanel = {$config.admPanel}
+    debug = 0
+    sendCacheHeaders = {$config.sendCacheHeaders}
+    intTarget =
+    extTarget =
+    disablePrefixComment = 1
+    index_enable = 1
+    index_externals = 1
+    index_metatags = 1
+    contentObjectExceptionHandler = 0
+
+    // Disable Image Upscaling
+    noScaleUp = 1
+
+    // Compression and Concatenation of CSS and JS Files
+    compressJs = 0
+    compressCss = 0
+    concatenateJs = 0
+    concatenateCss = 0
+}

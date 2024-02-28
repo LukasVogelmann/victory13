@@ -1,0 +1,39 @@
+##################################################
+### CONTENT ELEMENT SETTINGS                   ###
+### Shared settings for TYPO3 content elements ###
+##################################################
+lib.contentElement = FLUIDTEMPLATE
+lib.contentElement {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = Default
+    templateRootPaths {
+        0  = EXT:fluid_styled_content/Resources/Private/Templates/
+        10 = EXT:victory_frontend/Resources/Private/ContentElements/Templates/
+    }
+    partialRootPaths {
+        0  = EXT:fluid_styled_content/Resources/Private/Partials/
+        10 = EXT:victory_frontend/Resources/Private/ContentElements/Partials/
+    }
+    layoutRootPaths {
+        0  = EXT:fluid_styled_content/Resources/Private/Layouts/
+        10 = EXT:victory_frontend/Resources/Private/ContentElements/Layouts/
+    }
+
+    #################
+    ### VARIABLES ###
+    #################
+    variables {
+        backendlayout = TEXT
+        backendlayout {
+            data = pagelayout
+            replacement.10 {
+                search = pagets__
+                replace =
+            }
+            ifEmpty = default
+        }
+    }
+}

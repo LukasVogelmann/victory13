@@ -1,0 +1,102 @@
+.\!\text-arno-main {
+    color: #abff34;
+}
+.\!\text-arno-grey {
+    color: #c7b7b7;
+}
+.\!\text-arno-black {
+    color: #2B292A;
+}
+.text-100 {
+    font-size: 100px;
+}
+
+.button {
+    height: 58px;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 75px;
+    font-weight: 500;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    right: 30px;
+}
+
+.button-bg-main {
+    border: 1px solid #D0FA94;
+    color: #2B292A;
+    background-color: #D0FA94;
+}
+
+.button-bg-main::after {
+    content: url(/fileadmin/user_upload/icons/arrow-dark.svg);
+}
+
+.button-bg-dark {
+    border: 1px solid #D0FA94;
+    color: #D0FA94;
+    background-color: #3F3D3E;
+}
+
+.button-bg-dark::after {
+    content: url(/fileadmin/user_upload/icons/arrow-main.svg);
+}
+
+.button-bg-grey {
+    border: 1px solid #3F3D3E;
+    color: #3F3D3E;
+    background-color: #F2F2F2;
+}
+.button-bg-grey::after {
+    content: url(/fileadmin/user_upload/icons/arrow-dark.svg);
+}
+
+.button-bg-transparent {
+    border: 1px solid #D0FA94;
+    color: #D0FA94;
+    background-color: transparent;
+}
+.button-bg-transparent::after {
+    content: url(/fileadmin/user_upload/icons/arrow-main.svg);
+}
+
+.arrow-before {
+    display: flex;
+}
+.arrow-before::before {
+    display: block;
+    margin-right: 20px;
+    content: url(/fileadmin/user_upload/icons/arrow-main.svg);
+}
+.arrow-before.\!text-arno-grey::before {
+    content: url(/fileadmin/user_upload/icons/arrow-light.svg);
+}
+.arrow-before.\!text-arno-main::before {
+    content: url(/fileadmin/user_upload/icons/arrow-main.svg);
+}
+.arrow-before.\!text-arno-black::before {
+    content: url(/fileadmin/user_upload/icons/arrow-dark.svg);
+}
+.arrow-after {
+    display: flex;
+}
+.arrow-after::after {
+    display: block;
+    margin-left: 20px;
+    content: url(/fileadmin/user_upload/icons/arrow-main.svg);
+}
+.arrow-after.\!text-arno-grey::after {
+    content: url(/fileadmin/user_upload/icons/arrow-light.svg);
+}
+.arrow-after.\!text-arno-main::after {
+    content: url(/fileadmin/user_upload/icons/arrow-main.svg);
+}
+.arrow-after.\!text-arno-black::after {
+    content: url(/fileadmin/user_upload/icons/arrow-dark.svg);
+}

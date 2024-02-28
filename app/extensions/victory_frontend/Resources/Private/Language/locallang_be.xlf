@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-01-16UTC12:57:320">
+        <header>
+            <authorName>Lukas</authorName>
+            <authorEmail>l.vogelmann@schommer-media.de</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.startpage">
+                <source>Startpage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.header">
+                <source>Header Image</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
