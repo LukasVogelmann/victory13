@@ -1,0 +1,45 @@
+<f:for each="{media}" as="media" iteration="i">
+    <picture class="relative">
+        <div class="hover-overlay absolute z-10 top-0 left-0 flex w-full h-full items-center justify-center hover:cursor-pointer">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.25 29.933C38.4047 29.8437 38.5 29.6786 38.5 29.5C38.5 29.3214 38.4047 29.1563 38.25 29.067L25.5 21.7058C25.3453 21.6165 25.1547 21.6165 25 21.7058C24.8453 21.7951 24.75 21.9602 24.75 22.1388L24.75 36.8612C24.75 37.0398 24.8453 37.2049 25 37.2942C25.1547 37.3835 25.3453 37.3835 25.5 37.2942L38.25 29.933Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-linejoin="round"/>
+                <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#F2F2F2"/>
+            </svg>
+
+            <svg class="absolute left-40 top-40 h-[31px]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.3478 0H15.6522V30H14.3478V0Z" fill="#D0FA94"/>
+                <path d="M30 14.3478V15.6522L0 15.6522L5.70148e-08 14.3478L30 14.3478Z" fill="#D0FA94"/>
+            </svg>
+
+            <svg class="absolute right-40 top-40 h-[31px]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.3478 0H15.6522V30H14.3478V0Z" fill="#D0FA94"/>
+                <path d="M30 14.3478V15.6522L0 15.6522L5.70148e-08 14.3478L30 14.3478Z" fill="#D0FA94"/>
+            </svg>
+                  
+            <svg class="absolute left-40 bottom-40 h-[31px]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.3478 0H15.6522V30H14.3478V0Z" fill="#D0FA94"/>
+                <path d="M30 14.3478V15.6522L0 15.6522L5.70148e-08 14.3478L30 14.3478Z" fill="#D0FA94"/>
+            </svg>                
+        </div>
+
+        <source 
+            data-identifier="mobile"
+            media="(max-width: 766.98px)"
+            srcset="{f:uri.image(src: media.uid, treatIdAsReference: 1, cropVariant: 'mobile')}"
+        />
+
+        <source 
+            data-identifier="tablet"
+            media="(min-width: 767px) and (max-width: 1023.98px)"
+            srcset="{f:uri.image(src: media.uid, treatIdAsReference: 1, cropVariant: 'tablet')}"
+        />
+
+        <source 
+            data-identifier="desktop"
+            media="(min-width: 1024px)"
+            srcset="{f:uri.image(src: media.uid, treatIdAsReference: 1, cropVariant: 'default')}"
+        />
+        
+        <f:media file="{media}" additionalConfig="{controls: '0'}"/>
+    </picture>   
+</f:for>

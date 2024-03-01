@@ -9,9 +9,9 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'typo3' => '^13.0.0',
-            'fluid_styled_content' => '^13.0.0',
-            'rte_ckeditor' => '^13.0.0',
+            'typo3' => '^12.4.0',
+            'fluid_styled_content' => '^12.4.0',
+            'rte_ckeditor' => '^12.4.0',
         ],
         'conflicts' => [
         ],
@@ -26,6 +26,6 @@ $EM_CONF[$_EXTKEY] = [
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'author' => 'Lukas',
-    'author_email' => 'l.vogelmann@schommer-media.de',
+    'author_email' => 'jayvogelmann@icloud.com',
     'version' => '1.0.0',
 ];

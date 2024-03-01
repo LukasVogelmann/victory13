@@ -1,0 +1,23 @@
+###########################################
+#### CTYPE: Text Image ####
+###########################################
+
+tt_content.ce_text_image =< lib.contentElement
+tt_content.ce_text_image {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = Text_Image
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20 {
+            references.fieldName = image
+            as = image
+        }
+    }
+}

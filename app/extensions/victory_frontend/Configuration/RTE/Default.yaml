@@ -17,17 +17,11 @@ editor:
     style:
       definitions:
         # block level styles
-        - { name: 'Font Color Main', element: 'span', classes: ['!text-arno-main']}
-        - { name: 'Font Color Light Grey', element: 'span', classes: ['!text-arno-grey'] }
-        - { name: 'Font Color Black', element: 'span', classes: ['!text-arno-black'] }
         - { name: "Small", element: "small", classes: [] }
         - { name: "Muted", element: "span", classes: ['text-muted'] }
-        - { name: "Button Green", element: "span", classes: ['button', 'button-bg-main'] }
-        - { name: "Button Dark", element: "span", classes: ['button', 'button-bg-dark'] }
-        - { name: "Button Light", element: "span", classes: ['button', 'button-bg-grey'] }
-        - { name: "Button Transparent", element: "span", classes: ['button','button-bg-transparent'] }
-        - { name: "Arrow Before", element: "span", classes: ['arrow-before'] }
-        - { name: "Arrow After", element: "span", classes: ['arrow-after'] }
+        - { name: "H1 look-alike", element: "span", classes: ['h1'] }
+        - { name: "H2 look-alike", element: "span", classes: ['h2'] }
+        - { name: "H3 look-alike", element: "span", classes: ['h3'] }
 
 
     heading:
