@@ -1,12 +1,26 @@
 base: 'http://victory.ddev.site/'
 languages:
   -
-    title: English
+    title: German
     enabled: true
     languageId: 0
     base: /
-    locale: en_US.UTF-8
+    locale: de_DE
+    navigationTitle: ''
+    flag: de
+    hreflang: ''
+    websiteTitle: ''
+  -
+    title: English
+    enabled: true
+    locale: en_US
+    hreflang: ''
+    base: /en/
+    websiteTitle: ''
     navigationTitle: English
-    flag: us
+    fallbackType: strict
+    fallbacks: ''
+    flag: en-us-gb
+    languageId: 1
 rootPageId: 1
 websiteTitle: Victory

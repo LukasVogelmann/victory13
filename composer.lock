@@ -4,8 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf705cc1ee1a9012d09968aa3317ac05",
+    "content-hash": "9a82bab10e8057ccc51fb4183cee96dc",
     "packages": [
+        {
+            "name": "b13/menus",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/b13/menus.git",
+                "reference": "6479289b3d84ebf86899e6bee590dcc9218882d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/b13/menus/zipball/6479289b3d84ebf86899e6bee590dcc9218882d3",
+                "reference": "6479289b3d84ebf86899e6bee590dcc9218882d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ~8.0",
+                "typo3/cms-core": "^10 || ^11 || ^12.4",
+                "typo3/cms-frontend": "^10 || ^11 || ^12.4"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.8.11",
+                "phpunit/phpunit": "^9.5",
+                "typo3/cms-fluid-styled-content": "^11.5",
+                "typo3/cms-install": "^11.5",
+                "typo3/coding-standards": "^0.5",
+                "typo3/tailor": "^1.0",
+                "typo3/testing-framework": "7.0.2"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "menus",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "B13\\Menus\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Easy and fast menus for TYPO3 Frontends",
+            "support": {
+                "issues": "https://github.com/b13/menus/issues",
+                "source": "https://github.com/b13/menus/tree/1.0.3"
+            },
+            "time": "2023-08-08T14:21:56+00:00"
+        },
         {
             "name": "bacon/bacon-qr-code",
             "version": "2.0.8",

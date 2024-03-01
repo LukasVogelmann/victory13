@@ -1,0 +1,46 @@
+<div class="navbar">
+    <!-- Main Navigation -->
+    <f:if condition="{mainnavigation}">
+        <div class="mainnav">
+            <ul>
+                <f:for each="{mainnavigation}" as="mainnavigationItem">
+                    <li>
+                        <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+                            {mainnavigationItem.title}
+                        </a>
+                    </li>
+                </f:for>
+            </ul>    
+        </div>
+    </f:if>
+
+
+    <!-- Metanavigation -->
+    <f:if condition="{metanavigation}">
+        <div class="metanav">
+        <ul>
+                <f:for each="{metanavigation}" as="metanavigationItem">
+                    <li>
+                        <a href="{metanavigationItem.url}" target="{metanavigationItem.target}" title="{metanavigationItem.title}">
+                            {metanavigationItem.title}
+                        </a>
+                </f:for>
+            </ul> 
+        </div>
+    </f:if>
+
+    <!-- Languagenavigation -->
+    <!-- <ul>
+        <f:if condition="{languagenavigation}">
+            <div id="language_menu" class="language-menu">
+                <f:for each="{languagenavigation}" as="item" iteration="i">
+                    <div class="language-item">
+                        <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                        {item.navigationTitle}
+                        </a>
+                    </div>
+                </f:for>
+            </div>
+        </f:if>
+    </ul> -->
+</div>
