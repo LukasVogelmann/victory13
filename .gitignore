@@ -10,7 +10,8 @@ nbproject
 /public/typo3conf/*
 !/public/typo3conf/LocalConfiguration.php
 !/public/typo3conf/AdditionalConfiguration.php
-!/public/frontend/*
+!/public/frontend/
+/public/frontend/node_modules/
 /config/system/additional.php
 /.ddev/*
 /zzz.oldExtensions/*

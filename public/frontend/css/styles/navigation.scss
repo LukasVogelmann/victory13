@@ -1,0 +1,39 @@
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #151419;
+    
+    .navbar {
+        display: flex;
+        height: 120px;
+        align-items: center;
+
+        ul { 
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+    
+            li {
+                padding: 0 20px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #8b7bb5;
+                    }
+                }
+            }
+        }
+    } 
+
+    .logo {
+        height: 120px;
+        display: flex;
+        align-items: center;
+    }
+}
