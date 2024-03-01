@@ -1,0 +1,18 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+mod.wizards.newContentElement.wizardItems.custom {
+    after = common
+    header = Custom elements
+    elements {
+        ce_teaser {
+            iconIdentifier = boxIcon
+            title = LLL:EXT:victory_frontend/Resources/Private/Language/locallang_elements.xlf:content_element.ce_teaser
+            description = LLL:EXT:victory_frontend/Resources/Private/Language/locallang_elements.xlf:content_element.ce_teaser.description
+            tt_content_defValues {
+                CType = ce_teaser
+            }
+        }
+    }
+    show := addToList(ce_teaser)
+}

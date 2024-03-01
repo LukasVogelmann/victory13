@@ -12,6 +12,13 @@
             <trans-unit id="content_element.ce_text_image.description">
                 <source>Elent zum darestellen eines Bildes mit daneben stehendem Text</source>
             </trans-unit>
+
+            <trans-unit id="content_element.ce_teaser">
+                <source>Teaser Element</source>
+            </trans-unit>
+            <trans-unit id="content_element.ce_teaser.description">
+                <source>Element für die Startseite</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

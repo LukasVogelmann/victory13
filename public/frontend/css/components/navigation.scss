@@ -1,8 +1,9 @@
 nav {
     position: fixed;
+    z-index: 10;
     width: 100%;
     top: 0;
-    background-color: #151419;
+    background-color: $background_dark;
     
     .navbar {
         display: flex;
@@ -19,12 +20,12 @@ nav {
                 padding: 0 20px;
 
                 a {
-                    color: white;
+                    color: $white;
                     text-decoration: none;
 
                     &:hover {
                         cursor: pointer;
-                        color: #8b7bb5;
+                        color: $base_color;
                     }
                 }
             }

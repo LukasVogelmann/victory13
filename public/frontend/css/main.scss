@@ -1,6 +1,10 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+@import 'styles/colors';
 @import 'styles/global';
-@import 'styles/navigation';
-@import 'elements/text-image'
+
+@import 'components/navigation';
+@import 'components/footer';
+
+@import 'elements/teaser-item.scss';
  

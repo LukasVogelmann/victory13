@@ -1,0 +1,32 @@
+.teaser-element {
+    margin-top: 150px;
+
+    .teaser-items {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .teaser-item {
+            text-align: center;
+
+            .image {
+                img {
+                    height: 75px;
+                    width: auto;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: $black;
+                font-size: 1rem;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $base_color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<div class="teaser-item">
+    <f:if condition="{item.data.link}">
+        <f:then>
+            <f:link.typolink parameter="{item.data.link}">
+                <f:render section="TeaserItemContent" arguments="{_all}" />
+            </f:link.typolink>
+        </f:then>
+
+        <f:else>
+            <f:render section="TeaserItemContent" arguments="{_all}" />
+        </f:else>
+    </f:if>
+</div>
+
+<f:section name="TeaserItemContent">
+    <f:if condition="{item.image}">
+        <f:for each="{item.image}" as="image" iteration="i">
+            <div class="image">
+                <f:render partial="Media/Image" arguments="{image:image}" />
+            </div>
+        </f:for>
+    </f:if>
+    <f:if condition="{item.data.header}">
+        <div class="text">
+            <p>{item.data.header}</p>
+        </div>
+    </f:if>
+</f:section>

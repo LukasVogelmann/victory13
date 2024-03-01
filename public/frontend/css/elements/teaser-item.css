@@ -1,0 +1,17 @@
+.teaser-element {
+  margin-top: 150px;
+}
+.teaser-element .teaser-items {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.teaser-element .teaser-items .teaser-item .image img {
+  height: 150px;
+  width: auto;
+}
+.teaser-element .teaser-items .teaser-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}

@@ -1,0 +1,17 @@
+<f:layout name="Custom-Element" />
+
+<f:section name="Main">
+
+    <div class="container teaser-element">
+        <f:if condition="{data.description}">
+            <f:format.html>{data.description}</f:format.html>
+        </f:if>
+
+        <div class="teaser-items">
+            <f:for each="{records}" as="item" iteration="i">
+                <f:render partial="TeaserItem" arguments="{item:item}" />
+            </f:for>
+        </div>
+    </div>
+    
+</f:section>

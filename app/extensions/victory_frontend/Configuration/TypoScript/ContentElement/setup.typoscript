@@ -8,3 +8,4 @@
 #### Manual inclusion to keep control over loading order ####
 #############################################################
 @import 'EXT:victory_frontend/Configuration/TypoScript/ContentElement/Element/ce_text_image.typoscript'
+@import 'EXT:victory_frontend/Configuration/TypoScript/ContentElement/Element/ce_teaser.typoscript'

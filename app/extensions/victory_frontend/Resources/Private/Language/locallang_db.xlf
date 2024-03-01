@@ -9,6 +9,9 @@
             <trans-unit id="title">
                 <source>Title</source>
             </trans-unit>
+            <trans-unit id="header">
+                <source>Title</source>
+            </trans-unit>
             <trans-unit id="description">
                 <source>Description</source>
             </trans-unit>
@@ -32,6 +35,9 @@
             </trans-unit>
             <trans-unit id="media">
                 <source>Media</source>
+            </trans-unit>
+            <trans-unit id="item">
+                <source>Item</source>
             </trans-unit>
         </body>
     </file>

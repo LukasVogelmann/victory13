@@ -19,6 +19,7 @@ editor:
         # block level styles
         - { name: "Small", element: "small", classes: [] }
         - { name: "Muted", element: "span", classes: ['text-muted'] }
+        - { name: "Massive", element: "span", classes: ['massive'] }
         - { name: "H1 look-alike", element: "span", classes: ['h1'] }
         - { name: "H2 look-alike", element: "span", classes: ['h2'] }
         - { name: "H3 look-alike", element: "span", classes: ['h3'] }

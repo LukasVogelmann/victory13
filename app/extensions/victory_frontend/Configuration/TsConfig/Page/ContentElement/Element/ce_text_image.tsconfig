@@ -6,7 +6,7 @@ mod.wizards.newContentElement.wizardItems.custom {
     header = Custom elements
     elements {
         ce_text_image {
-            iconIdentifier = textImageIcon
+            iconIdentifier = boxIcon
             title = LLL:EXT:victory_frontend/Resources/Private/Language/locallang_elements.xlf:content_element.ce_text_image
             description = LLL:EXT:victory_frontend/Resources/Private/Language/locallang_elements.xlf:content_element.ce_text_image.description
             tt_content_defValues {

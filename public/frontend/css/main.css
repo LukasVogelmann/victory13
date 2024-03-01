@@ -11853,8 +11853,13 @@ textarea.form-control-lg {
   padding-top: 50px;
 }
 
+.massive {
+  font-size: 5rem;
+}
+
 nav {
   position: fixed;
+  z-index: 10;
   width: 100%;
   top: 0;
   background-color: #151419;
@@ -11885,4 +11890,30 @@ nav .logo {
   height: 120px;
   display: flex;
   align-items: center;
+}
+
+.teaser-element {
+  margin-top: 150px;
+}
+.teaser-element .teaser-items {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.teaser-element .teaser-items .teaser-item {
+  text-align: center;
+}
+.teaser-element .teaser-items .teaser-item .image img {
+  height: 75px;
+  width: auto;
+}
+.teaser-element .teaser-items .teaser-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+.teaser-element .teaser-items .teaser-item a:hover {
+  cursor: pointer;
+  color: #8b7bb5;
 }

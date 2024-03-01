@@ -19,3 +19,6 @@
     font-family: var(--typo3-header-font-family);
     font-variant: normal;
 }
+.massive {
+    font-size: 2rem;
+}
