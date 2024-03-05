@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-04-19T08:49:00Z" product-name="victory_products">
+        <header>
+            <authorName>Lukas</authorName>
+            <authorEmail>jayvogelmann@icloud.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="plugin.products.title">
+                <source>Products</source>
+            </trans-unit>
+            <trans-unit id="plugin.products.description">
+                <source>List View of Products</source>
+            </trans-unit>
+            <trans-unit id="products.orderno">
+                <source>Bestellnummer</source>
+            </trans-unit>
+            <trans-unit id="products.status">
+                <source>Lieferkennzeichen</source>
+            </trans-unit>
+            <trans-unit id="products.price">
+                <source>Einkaufspreis</source>
+            </trans-unit>
+            <trans-unit id="products.centprice">
+                <source>Preis in Cent</source>
+            </trans-unit>
+            <trans-unit id="products.qty">
+                <source>Stückzahl</source>
+            </trans-unit>
+            <trans-unit id="products.labeltext">
+                <source>Etikettenzeichen</source>
+            </trans-unit>
+            <trans-unit id="products.description">
+                <source>Beschreibung</source>
+            </trans-unit>
+            <trans-unit id="products.infotext">
+                <source>Info Text</source>
+            </trans-unit>
+            <trans-unit id="products.text2">
+                <source>Bezeichnung 2</source>
+            </trans-unit>
+            <trans-unit id="products.text3">
+                <source>Bezeichnung 3</source>
+            </trans-unit>
+            <trans-unit id="products.weight">
+                <source>Gewicht</source>
+            </trans-unit>
+            <trans-unit id="products.catalogno">
+                <source>Katalognummer</source>
+            </trans-unit>
+            <trans-unit id="products.image">
+                <source>Bild</source>
+            </trans-unit>
+            <trans-unit id="products.category">
+                <source>Produktgruppe</source>
+            </trans-unit>
+            <trans-unit id="products.article">
+                <source>Artikelnummer</source>
+            </trans-unit>
+            <trans-unit id="products.material">
+                <source>Material</source>
+            </trans-unit>
+            <trans-unit id="products.catalogsearch">
+                <source>Katalognummer Suche</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

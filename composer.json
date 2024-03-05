@@ -40,12 +40,17 @@
 		"typo3/cms-tstemplate": "^12.4.0",
 		"typo3/cms-viewpage": "^12.4.0",
 		"typo3/cms-webhooks": "^12.4.0",
-		"victory/frontend": "^1.0"
+		"victory/frontend": "^1.0",
+		"victory/products": "^1.0"
 	},
 	"repositories": [
 		{
 			"type": "path",
 			"url": "./app/extensions/*"
+		},
+		{
+			"type": "path",
+			"url": "./app/extensions/plugins/*"
 		}
 	]
 }

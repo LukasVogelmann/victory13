@@ -11849,8 +11849,7 @@ textarea.form-control-lg {
 }
 
 #body-content {
-  margin-top: 120px;
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 .massive {
@@ -11868,15 +11867,14 @@ nav .navbar {
   display: flex;
   height: 120px;
   align-items: center;
+  justify-content: flex-end;
 }
 nav .navbar ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 40px;
   margin: 0;
-}
-nav .navbar ul li {
-  padding: 0 20px;
 }
 nav .navbar ul li a {
   color: white;
@@ -11891,11 +11889,78 @@ nav .logo {
   display: flex;
   align-items: center;
 }
+nav .login svg {
+  fill: white;
+  width: 35px;
+  height: 35px;
+  margin-left: 50px;
+}
+nav .login svg:hover {
+  cursor: pointer;
+  fill: #8b7bb5;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  margin-top: 100px;
+  height: 120px;
+  width: 100%;
+  border-top: 1px solid #151419;
+}
+#footer .metanav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  height: 120px;
+  list-style: none;
+}
+#footer .metanav ul li a {
+  color: black;
+  text-decoration: none;
+}
+#footer .metanav ul li a:hover {
+  color: #8b7bb5;
+}
+#footer .language-menu {
+  height: 120px;
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#footer .language-menu .flag {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+#footer .language-menu .flag img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: auto;
+}
+#footer .language-menu .dropdown {
+  display: none;
+  overflow: hidden;
+}
 
 .teaser-element {
-  margin-top: 150px;
+  min-height: calc(100vh - 240px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .teaser-element .teaser-items {
+  width: 100%;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -11904,16 +11969,29 @@ nav .logo {
 .teaser-element .teaser-items .teaser-item {
   text-align: center;
 }
-.teaser-element .teaser-items .teaser-item .image img {
-  height: 75px;
-  width: auto;
-}
 .teaser-element .teaser-items .teaser-item a {
   text-decoration: none;
   color: black;
   font-size: 1rem;
 }
+.teaser-element .teaser-items .teaser-item a .image {
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.teaser-element .teaser-items .teaser-item a .image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 75px;
+  width: auto;
+  transition: ease-in-out 0.2s;
+}
 .teaser-element .teaser-items .teaser-item a:hover {
   cursor: pointer;
   color: #8b7bb5;
+}
+.teaser-element .teaser-items .teaser-item a:hover img {
+  height: 85px;
 }

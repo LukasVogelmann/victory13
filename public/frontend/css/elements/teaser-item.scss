@@ -1,7 +1,13 @@
 .teaser-element {
-    margin-top: 150px;
+    min-height: calc(100vh - 240px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .teaser-items {
+        width: 100%;
         margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
@@ -10,21 +16,34 @@
         .teaser-item {
             text-align: center;
 
-            .image {
-                img {
-                    height: 75px;
-                    width: auto;
-                }
-            }
-
             a {
                 text-decoration: none;
                 color: $black;
                 font-size: 1rem;
 
+                .image {
+                    height: 100px;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        height: 75px;
+                        width: auto;
+                        transition: ease-in-out .2s;
+                    }
+                }
+
                 &:hover {
                     cursor: pointer;
                     color: $base_color;
+
+                    img {
+                        height: 85px;
+                    }
                 }
             }
         }

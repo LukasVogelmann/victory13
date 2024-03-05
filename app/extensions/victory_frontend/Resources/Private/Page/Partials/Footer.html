@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-end ">
+            <!-- Metanavigation -->
+            <f:if condition="{metanavigation}">
+                <div class="metanav">
+                    <ul>
+                        <f:for each="{metanavigation}" as="metanavigationItem">
+                            <li>
+                                <a href="{metanavigationItem.url}" target="{metanavigationItem.target}" title="{metanavigationItem.title}">
+                                    {metanavigationItem.title}
+                                </a>
+                        </f:for>
+                    </ul> 
+                </div>
+            </f:if>
+
+            <!-- Languagenavigation -->
+            <f:if condition="{languagenavigation}">
+                <div id="language_menu" class="language-menu">
+                    <div class="flag">
+                        <f:for each="{languagenavigation}" as="item" iteration="i">
+                            <f:if condition="{item.active}">
+                                <f:image src="fileadmin/flags/{item.flag}.svg" treatIdAsReference="1" />
+                            </f:if>
+                        </f:for>
+                    </div>
+
+                    <div class="dropdown">
+                        <f:for each="{languagenavigation}" as="item" iteration="i">
+                            <div class="language-item">
+                                <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                                {item.navigationTitle}
+                                </a>
+                            </div>
+                        </f:for>
+                    </div>
+                </div>
+            </f:if>
+        </div>
+    </div>
+</div>    

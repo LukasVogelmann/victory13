@@ -9,15 +9,16 @@ nav {
         display: flex;
         height: 120px;
         align-items: center;
+        justify-content: flex-end;
 
         ul { 
             list-style: none;
             display: flex;
             flex-wrap: wrap;
+            gap: 40px;
             margin: 0;
     
             li {
-                padding: 0 20px;
 
                 a {
                     color: $white;
@@ -36,5 +37,19 @@ nav {
         height: 120px;
         display: flex;
         align-items: center;
+    }
+
+    .login {
+        svg {
+            fill: $white;
+            width: 35px;
+            height: 35px;
+            margin-left: 50px;
+
+            &:hover {
+                cursor: pointer;
+                fill: $base_color;
+            }
+        }
     }
 }

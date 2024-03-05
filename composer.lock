@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a82bab10e8057ccc51fb4183cee96dc",
+    "content-hash": "f4b47cb78f2047ce84e7c3f51b8b2bf3",
     "packages": [
         {
             "name": "b13/menus",
@@ -6972,6 +6972,41 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Standard frontend extension",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "victory/products",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "./app/extensions/plugins/vshop",
+                "reference": "25480c2b20336a4e09f73581f2ee64f758739067"
+            },
+            "require": {
+                "typo3/cms-core": "^12.4.0",
+                "typo3/cms-fluid-styled-content": "^12.4.0",
+                "typo3/cms-rte-ckeditor": "^12.4.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "victory_products"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Victory\\VictoryProducts\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Plugin to display Products",
             "keywords": [
                 "TYPO3 CMS"
             ],

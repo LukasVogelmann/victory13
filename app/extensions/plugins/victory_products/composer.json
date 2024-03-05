@@ -1,0 +1,23 @@
+{
+    "name": "victory/products",
+    "type": "typo3-cms-extension",
+    "description": "Plugin to display Products",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^12.4.0",
+        "typo3/cms-rte-ckeditor": "^12.4.0",
+        "typo3/cms-fluid-styled-content": "^12.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Victory\\VictoryProducts\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "victory_products"
+        }
+    }
+}

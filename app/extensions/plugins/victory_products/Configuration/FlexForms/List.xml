@@ -1,0 +1,25 @@
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <sheetTitle>
+                    General
+                </sheetTitle>
+                <type>array</type>
+                <el>
+                    <settings.list_page_uid>
+                        <TCEforms>
+                            <label>Page of List View:</label>
+                            <config>
+                                <type>group</type>
+                                <size>1</size>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                            </config>
+                        </TCEforms>
+                    </settings.list_page_uid>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

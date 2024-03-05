@@ -1,0 +1,17 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+mod.wizards.newContentElement.wizardItems.plugins {
+    elements {
+        victory_products_list {
+            iconIdentifier = productIcon
+            title = LLL:EXT:victory_products/Resources/Private/Language/Backend.xlf:plugin.products.title
+            description = LLL:EXT:victory_products/Resources/Private/Language/Backend.xlf:plugin.products.description
+            tt_content_defValues {
+                CType = list
+                list_type = victory_products_list
+            }
+        }
+    }
+    show := *
+}
